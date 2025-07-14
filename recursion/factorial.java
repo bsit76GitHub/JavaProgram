@@ -19,5 +19,7 @@ public class factorial {
     int n = sc.nextInt();
     int result = calcFac(n);
     System.out.println(result);
+
+    sc.close();
   }
 }

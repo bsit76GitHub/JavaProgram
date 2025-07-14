@@ -1,4 +1,3 @@
-package array_02_basics.SortingArray;
 
 import java.util.Scanner;
 

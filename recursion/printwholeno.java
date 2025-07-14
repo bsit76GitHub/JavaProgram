@@ -19,5 +19,7 @@ public class printwholeno {
         int m = n;
 
         printno(1, m);
+
+        sc.close();
     }
 }
