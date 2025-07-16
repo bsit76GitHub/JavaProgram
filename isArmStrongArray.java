@@ -31,5 +31,6 @@ public class isArmStrongArray {
             newNum = 0;
         }
         sc.close();
+        
     }
 }
