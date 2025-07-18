@@ -31,5 +31,6 @@ public class checkArmstrong {
             unitDigit = 0;
             newNum = 0;
         }
+        sc.close();
     }
 }

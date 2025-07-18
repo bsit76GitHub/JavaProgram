@@ -34,6 +34,7 @@ public class findOccuranceOfChar {
 
         checkOccurence(str, 0, 'a');
 
+        // sc.close();
     }
 
 }

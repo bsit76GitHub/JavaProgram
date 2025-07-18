@@ -15,5 +15,7 @@ public class revString {
         System.out.print("Enter a String : ");
         String scr = sc.nextLine();
         revStringPrint(scr, scr.length() - 1);
+
+        sc.close();
     }
 }

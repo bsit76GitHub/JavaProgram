@@ -39,6 +39,7 @@ public class date {
         int year = sc.nextInt();
         String res = Result.findDay(month, day, year);
         System.out.println(res);
-    
+        
+        sc.close();
     }
 }
