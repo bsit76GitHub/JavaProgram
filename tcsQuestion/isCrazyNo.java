@@ -23,6 +23,6 @@ public class isCrazyNo {
         } else {
            System.out.println("No"); 
         }
-
+scanner.close();
     }
 }

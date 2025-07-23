@@ -1,9 +1,5 @@
-// Input no. of product then input product_id and units_sold of each, 
-// then print product_id of bestSelling item and leastSelling item.
-
-import java.util.Scanner;
-
-public class tcsQue {
+import java.util.*;
+public class tcsQVector {
     static Scanner sc = new Scanner(System.in);
     int product_id, units_sold, bestSelling = 0, leastSelling;
 
@@ -30,18 +26,21 @@ public class tcsQue {
     public static void main(String[] args) {
         System.out.println("Enter no. of product : ");
         int n = sc.nextInt();
-        tcsQue product[] = new tcsQue[n];
-        for (int i = 0; i < n; i++) {
-            product[i] = new tcsQue();
-            product[i].inputProduct();
-        }
-        for (int i = 0; i < n; i++) {
-            product[i].findProduct();
-        }
+        Vector<Integer> vector = new Vector<Integer>();
+        // for (int i = 0; i < n; i++) {
+        //     tcsQVector product = new tcsQVector();
+        //     product.inputProduct();
+        //     vector.add(product);
+        // }
+        // for (int i = 0; i < n; i++) {
+        //     tcsQVector product1 =  (tcsQVector)(vector.elementAt(i));
+        //     product1.findProduct();
+        // }
 
-        for (int i = 0; i < n; i++) {
-            product[i].printProduct();
-        }
+        // for (int i = 0; i < n; i++) {
+        //     tcsQVector product1 =  (tcsQVector)(vector.elementAt(i));
+        //     product1.printProduct();
+        // }
         System.out.println("Still not solved");
     }
 }
