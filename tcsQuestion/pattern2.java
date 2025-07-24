@@ -1,30 +1,32 @@
 package tcsQuestion;
 
-public class incToDecPattern {
+public class pattern2 {
     public static void main(String[] args) {
-        // int n = 8;
+        int n = 8;
 
-        // for (int i = n; i > 0; i--) {
-        //      int x = 1;
-        //     for (int j = 1; j <= ((n * 4) - 3); j++) {
-        //         if (j % 2 == 0) {
-        //             System.out.print("-");
-        //         } else {
-        //             if (x <= i) {
-        //                 System.out.print(x);
-        //                 x++;
-        //             }else{
-        //                 System.out.print("#");
-        //             }
-                    
-                    
-        //         }
+        for (int i = n; i > 0; i--) {
+            int x = 1;
+            for (int j = 1; j <= ((n * 4) - 3); j++) {
+                if (j % 2 == 0) {
+                    System.out.print("-");
+                } else {
+                    if (x <= i) {
+                        System.out.print(x);
+                        x++;
+                    } else if (j > i) {
+                        
+                        System.out.print("*");
+                    } else {
+                        System.out.print("#");
+                    }
 
-        //     }
+                }
 
-        //     System.out.println();
+            }
 
-        // }
+            System.out.println();
+
+        }
 
         // ==========================================
         // for (int i = n; i > 0; i--) {
