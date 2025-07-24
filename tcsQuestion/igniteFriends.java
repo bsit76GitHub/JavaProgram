@@ -34,18 +34,6 @@ public class igniteFriends {
             digitsProduct[i] = digit;
             product = product / 10;
         }
-        for (int i = 0; i < 2; i++) {
-            System.out.println(digitsN[i]);
-        }
-        System.out.println("\n");
-        for (int i = 0; i < 2; i++) {
-            System.out.println(digitsM[i]);
-        }
-        System.out.println("\n");
-        for (int i = 0; i < 4; i++) {
-            System.out.println(digitsProduct[i]);
-        }
-        System.out.println("\n");
 
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 4; j++) {
