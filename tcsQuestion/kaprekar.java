@@ -19,6 +19,6 @@ public class kaprekar {
             System.out.println(num + " is a kaprekar number.");
         else
             System.out.println(num + " is not a kaprekar number.");
-
+        scanner.close();
     }
 }

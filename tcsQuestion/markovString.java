@@ -7,13 +7,19 @@
 //         Scanner scanner = new Scanner(System.in);
 //         String str = scanner.nextLine();
 //         System.out.println(str);
+      
 //         boolean m = true;
 //         if (!str.endsWith(".") || !str.endsWith("?")) {
 //             System.out.println("error");
 //         }
 //         String[] strArr = str.split(" ");
+//          for (String s : strArr) {
+//             System.out.println(s);
+//         }
+        
+//         System.out.println(" ");
 //         for (int i = 0; i < strArr.length - 1; i++) {
-//             if (strArr[i].length() > strArr[i + 1].length()) {
+//             if (strArr[i].trim().length() > strArr[i + 1].trim().length()) {
 //                 System.out.println("Not Markov Srting.");
 //                 m = false;
 //                 break;

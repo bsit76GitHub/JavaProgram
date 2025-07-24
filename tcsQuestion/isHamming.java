@@ -12,19 +12,17 @@ public class isHamming {
             if (n % i == 0) {
                 if (i != 2 && i != 3 && i != 5) {
                     System.out.println("Not Hamming Number");
-                    b=false;
+                    b = false;
                     break;
                 }
                 n = n / i;
             } else {
                 i++;
             }
-
         }
         if (b == true) {
             System.out.println("Hamming number.");
         }
-
         scanner.close();
     }
 }
