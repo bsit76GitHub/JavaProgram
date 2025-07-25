@@ -3,74 +3,44 @@ package tcsQuestion;
 public class pattern2 {
     public static void main(String[] args) {
         int n = 8;
-
-        for (int i = n; i > 0; i--) {
-            int x = 1;
-            for (int j = 1; j <= ((n * 4) - 3); j++) {
+        int r = n, f = 0, l = 0;
+        for (int i = 0; i < n; i++) {
+            int k = 1;
+            for (int j = 0; j <= ((n * 4) - 4); j++) {
                 if (j % 2 == 0) {
-                    System.out.print("-");
-                } else {
-                    if (x <= i) {
-                        System.out.print(x);
-                        x++;
-                    } else if (j > i) {
-                        
-                        System.out.print("*");
-                    } else {
-                        System.out.print("#");
+                    if (i == 0 && j <= (((n * 4) - 4) / 2) - f) {
+                        System.out.print(k);
+                        l = k - 1;
+                        k++;
+                    } else if (j <= (((n * 4) - 4) / 2) - f) {
+                        System.out.print(k);
+                        l = k;
+                        k++;
+                    } else if (j > (((n * 4) - 4) / 2) - f && j < (((n * 4) - 4) / 2) + f) {
+                        System.out.print("-");
+                    } else if (j >= (((n * 4) - 4) / 2) + f) {
+                        System.out.print(l);
+                        l--;
                     }
-
+                } else {
+                    System.out.print("-");
                 }
-
             }
-
+            f = f + 2;
             System.out.println();
-
         }
-
-        // ==========================================
-        // for (int i = n; i > 0; i--) {
-        // // for (int j = 1; j <= i; j++) {
-        // // System.out.print(j + "-");
-        // // }
-        // // for (int j = i - 1; j > 0; j--) {
-        // // System.out.print(j + "-");
-        // // }
-
-        // int j = 1;
-        // while (j <= n) {
-        // if (j <= i) {
-        // System.out.print(j + "-");
-
-        // j++;
-        // }
-        // // System.out.print("-");
-        // if (j > i && j <= n) {
-        // System.out.print("-" + "-");
-        // j++;
-        // }
-        // }
-        // // System.out.println();
-        // // System.out.println(j);
-
-        // if (i == n) {
-        // j = i - 1;
-        // } else {
-        // j = i;
-        // }
-        // while (j > 0) {
-        // if (j > i && j < n) {
-        // System.out.print("#" + "-");
-        // j--;
-        // }
-
-        // if (j > 0) {
-        // System.out.print(j + "-");
-        // j--;
-        // }
-        // }
-        // }
-        // ======================================
-
     }
 }
+
+// n=8
+//output:
+/* 
+1-2-3-4-5-6-7-8-7-6-5-4-3-2-1
+1-2-3-4-5-6-7---7-6-5-4-3-2-1
+1-2-3-4-5-6-------6-5-4-3-2-1
+1-2-3-4-5-----------5-4-3-2-1
+1-2-3-4---------------4-3-2-1
+1-2-3-------------------3-2-1
+1-2-----------------------2-1
+1---------------------------1
+*/
