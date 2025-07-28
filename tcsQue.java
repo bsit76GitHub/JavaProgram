@@ -4,44 +4,37 @@
 import java.util.Scanner;
 
 public class tcsQue {
-    static Scanner sc = new Scanner(System.in);
-    int product_id, units_sold, bestSelling = 0, leastSelling;
-
-    void inputProduct() {
-        product_id = sc.nextInt();
-        units_sold = sc.nextInt();
-    }
-
-    void findProduct() {
-
-        if (units_sold > bestSelling) {
-            bestSelling = units_sold;
-        } else if (units_sold < leastSelling) {
-            leastSelling = units_sold;
-        }
-    }
-
-    void printProduct() {
-
-        System.out.println(bestSelling + "\t" + leastSelling);
-        // System.out.println(product_id + "\t" + units_sold);
-    }
-
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter no. of product : ");
         int n = sc.nextInt();
-        tcsQue product[] = new tcsQue[n];
-        for (int i = 0; i < n; i++) {
-            product[i] = new tcsQue();
-            product[i].inputProduct();
+        int[] product = new int[2 * n];
+        for (int i = 0; i < 2 * n; i++) {
+            product[i] = sc.nextInt();
         }
-        for (int i = 0; i < n; i++) {
-            product[i].findProduct();
+        int bestSelling = product[1], leastSelling = product[1];
+        for (int i = 0; i < product.length; i++) {
+            if (i % 2 != 0) {
+                if (product[i] > bestSelling) {
+                    bestSelling = product[i];
+                }
+                if (product[i] < leastSelling) {
+                    leastSelling = product[i];
+                }
+            }
         }
+        int bestSellingId = product[1], leastSellingId = product[1];
+        for (int i = 0; i < product.length; i++) {
 
-        for (int i = 0; i < n; i++) {
-            product[i].printProduct();
+            if (product[i] == bestSelling) {
+                bestSellingId = product[i - 1];
+            }
+            if (product[i] == leastSelling) {
+                leastSellingId = product[i - 1];
+            }
         }
-        System.out.println("Still not solved");
+        System.out.println(bestSellingId + "," + leastSellingId);
+
+        sc.close();
     }
 }
