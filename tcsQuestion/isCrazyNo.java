@@ -1,4 +1,5 @@
 package tcsQuestion;
+
 // crazy no. = armstrong no.
 import java.util.*;
 
@@ -12,7 +13,7 @@ public class isCrazyNo {
         for (long i = num; i > 0; i = i / 10) {
             countDigit++;
         }
-        
+
         for (long i = num; i > 0; i = i / 10) {
             long digit = i % 10;
             newNum = newNum + (long) (Math.pow(digit, countDigit));
@@ -21,8 +22,8 @@ public class isCrazyNo {
         if (newNum == num) {
             System.out.println("Yes");
         } else {
-           System.out.println("No"); 
+            System.out.println("No");
         }
-scanner.close();
+        scanner.close();
     }
 }

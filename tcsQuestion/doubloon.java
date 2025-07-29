@@ -1,5 +1,7 @@
 package tcsQuestion;
 
+// Doubloon word : those word's whose every letter appears twice .
+
 import java.util.Scanner;
 
 public class doubloon {
