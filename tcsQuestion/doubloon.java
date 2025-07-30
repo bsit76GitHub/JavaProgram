@@ -21,7 +21,7 @@ public class doubloon {
                 count = 0;
                 char u = c[i];
                 for (int j = 0; j < c.length; j++) {
-                    if (u == c[j]) {
+                    if (String.valueOf(u).equalsIgnoreCase(String.valueOf(c[j]))) {
                         count++;
                     }
                 }

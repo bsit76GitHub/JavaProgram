@@ -5,9 +5,8 @@ import java.util.Scanner;
 
 public class methodsString {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String str1 = "Hello", str2 = "Java";
 
+        // String str1 = "Hello", str2 = "Java";
         // System.out.println(str1 + " " + str2);
 
         // methods / function :
@@ -57,7 +56,7 @@ public class methodsString {
         // System.out.println(str.replace("u", "o"));
 
         // 12. split()
-        String line = "Hello, my name is Brajendra Sharma .";
+        // String line = "Hello, my name is Brajendra Sharma .";
         // System.out.println(line);
         // String[] arrLine = line.split(" ");
         // for (String string : arrLine) {
@@ -72,9 +71,9 @@ public class methodsString {
         // System.out.println(line.substring(6, 12));
 
         // 14. toCharArray() : convert string into character array.
-        char[] arrChar = line.toCharArray();
+        // char[] arrChar = line.toCharArray();
         // for (char c : arrChar) {
-        //     System.out.print(c + " , ");
+        // System.out.print(c + " , ");
         // }
 
         // //15. toLowerCase : It converts all character in Lower Case.
@@ -82,16 +81,31 @@ public class methodsString {
         // //16. toUpperCase() : It converts all character in Upper Case.
         // System.out.println(line.toUpperCase());
 
-        // 17. trim() : eliminates all leading and trailing space and return string value.
-        String x = "Hello    ";
-        String y = "    Gental";
-        String z = "    man    ";
-        String z1 = ".";
-        System.out.println(x + y + z + z1);
-        System.out.println(x.trim()+z1);
-        System.out.println( y.trim()+ z1);
-        System.out.println(z.trim() + z1);
-        System.out.println(x.trim() + y.trim() + z.trim() + z1);
+        // 17. trim() : eliminates all leading and trailing space and return string
+        // value.
+        // String x = "Hello ";
+        // String y = " Gental";
+        // String z = " man ";
+        // String z1 = ".";
+        // System.out.println(x + y + z + z1);
+        // System.out.println(x.trim() + z1);
+        // System.out.println(y.trim() + z1);
+        // System.out.println(z.trim() + z1);
+        // System.out.println(x.trim() + y.trim() + z.trim() + z1);
+
+        // 18. replace():
+        // The replace() method searches a string for a specified character, and returns
+        // a new string where the specified character(s) are replaced.
+        // String string = "Hello Rahul";
+        // System.out.println(string.replace("l", "$"));
+
+        // 19. replaceAll():
+        // syntex : replaceAll(String regex, String replacement)
+        // The replaceAll() method replaces the first match of a regular expression in a
+        // string with a new substring.
+        String myStr = "Quest complete! Earned 30 gold and 500 experience.";
+        String regex = "[a,e,i,o,u]";
+        System.out.println(myStr.replaceAll(regex, ""));
 
     }
 }
