@@ -12,27 +12,25 @@ public class wrapItUp {
         String finalWord = "";
         for (String word : words) {
             StringBuilder sb = new StringBuilder();
-            finalWord="";
+            finalWord = "";
             int count = 0;
             for (int i = 0; i < word.length(); i++) {
-                count=0;
+                count = 0;
                 char currentChar = word.charAt(i);
                 count++;
-                while (i+1< word.length() && currentChar ==word.charAt(i+1) ) {
-                   count++;
-                   i++;
+                while (i + 1 < word.length() && currentChar == word.charAt(i + 1)) {
+                    count++;
+                    i++;
                 }
-                if (count>1) {
+                if (count > 1) {
                     sb.append(count).append(currentChar);
-                }else{
+                } else {
                     sb.append(currentChar);
                 }
             }
             finalWord = sb.toString();
             System.out.print(finalWord + " ");
         }
-
-        
-       
+        scanner.close();
     }
 }

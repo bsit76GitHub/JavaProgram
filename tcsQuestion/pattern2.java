@@ -6,7 +6,7 @@ public class pattern2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        int r = n, f = 0, l = 0;
+        int f = 0, l = 0;
         for (int i = 0; i < n; i++) {
             int k = 1;
             for (int j = 0; j <= ((n * 4) - 4); j++) {
@@ -32,6 +32,7 @@ public class pattern2 {
             f = f + 2;
             System.out.println();
         }
+        scanner.close();
     }
 }
 

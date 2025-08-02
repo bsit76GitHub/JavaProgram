@@ -1,4 +1,5 @@
 package tcsQuestion;
+
 // Abecedarian word : those word whose letters appear in alphabetical order.
 // like "mnop" is Abecedarian word but "adsc" is not Abecedarian word.
 import java.util.Scanner;
@@ -11,7 +12,7 @@ public class abecedarianWord {
         for (int i = 0; i < n; i++) {
             strings[i] = scanner.next();
         }
-
+        scanner.close();
         for (String str : strings) {
             char[] ch = str.toCharArray();
             boolean b = false;

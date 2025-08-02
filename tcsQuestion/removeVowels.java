@@ -47,6 +47,6 @@ public class removeVowels {
         // methods : 5 
         String str2 = str.toLowerCase();
         String regex2 = "[a,e,i,o,u]";
-        System.out.println(str.replaceAll(regex2, ""));
+        System.out.println(str2.replaceAll(regex2, ""));
     }
 }
