@@ -1,5 +1,5 @@
 package tcsQuestion;
-
+// An "EVIL NUMBER" is a positive whole number which has even number of 1's in its binary equivalent.
 import java.util.Scanner;
 
 public class evilNumber {
@@ -16,14 +16,10 @@ public class evilNumber {
             }
         }
         if (count % 2 == 0) {
-            for (int i = 0; i < binaryNum.length(); i++) {
-                System.out.print(binaryNum.charAt(i));
-            }
+            System.out.print(binaryNum);
             System.out.println(" is an evil number");
         } else {
-            for (int i = 0; i < binaryNum.length(); i++) {
-                System.out.print(binaryNum.charAt(i));
-            }
+            System.out.print(binaryNum);
             System.out.println(" is not an evil number");
         }
 
@@ -48,7 +44,6 @@ public class evilNumber {
         // } else {
         // for (int i = digit - 1; i >= 0; i--) {
         // System.out.print(binary[i]);
-
         // }
         // System.out.println(" is not an evil number");
         // }

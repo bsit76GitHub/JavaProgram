@@ -101,7 +101,7 @@ public class methodsString {
 
         // 19. replaceAll():
         // syntex : replaceAll(String regex, String replacement)
-        // The replaceAll() method replaces the first match of a regular expression in a
+        // The replaceFirst() method replaces the first match of a regular expression in a
         // string with a new substring.
         String myStr = "Quest complete! Earned 30 gold and 500 experience.";
         String regex = "[a,e,i,o,u]";
