@@ -24,7 +24,7 @@ public class currencyFormatter {
         System.out.println("China: " + china);
         System.out.println("France: " + france);
 
-        scanner.close();
+        
     }
 
     // Java 8 style helper method for currency formatting
