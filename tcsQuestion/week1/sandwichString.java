@@ -1,7 +1,14 @@
 package tcsQuestion.week1;
+
+import java.util.Scanner;
+
+// input : breadJamdaerb
+// output : Jam
 public class sandwichString {
     public static void main(String[] args) {
-        String str = "breadJamdaerb";
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
+        sc.close();
         int m = 0;
         for (int i = 0; i < str.length() - i; i++) {
 
