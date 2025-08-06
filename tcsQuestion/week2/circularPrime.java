@@ -20,7 +20,6 @@ public class circularPrime {
         boolean isPrime = false;
         do {
             isPrime = false;
-            int n = newNum;
             int f = 0;
             for (int i = 1; i <= newNum; i++) {
                 if (newNum % i == 0) {
